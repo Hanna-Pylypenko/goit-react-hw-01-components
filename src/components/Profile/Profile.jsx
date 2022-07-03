@@ -1,7 +1,8 @@
-export const Profile = ({name, tag,location, avatar, followers, views, likes}) => {
-    return (<div className="profile">
-        <div className="description">
-            <img
+import css from "./Profile.module.css"
+export const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
+    return (<div className={css.profile}>
+        <div className={css.description}>
+            <img width="240px"
                 src={avatar}
                 alt={name}
                 className="avatar"
@@ -11,7 +12,7 @@ export const Profile = ({name, tag,location, avatar, followers, views, likes}) =
             <p className="location">{location}</p>
         </div>
 
-        <ul className="stats">
+        <ul className={css.stats}>
             <li>
                 <span className="label">Followers</span>
                 <span className="quantity">{followers}</span>
