@@ -1,12 +1,20 @@
-import css  from "./Statistics.module.css"
-export const Statistics = ({ collection }) => {
+import PropTypes from 'prop-types';
+
+import css from "./Statistics.module.css"
+export const Statistics = ({ title, collection }) => {
+  console.log({ collection })
     return (
         <section className={css.statistics}>
-  <h2 className={css.title}>Upload stats</h2>
+        {title && (<h2 className={css.title}>{title}</h2>)}
 
   <ul className={css.statsList}>
     {collection}
   </ul>
 </section>
     )
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  collection: PropTypes.arrayOf(PropTypes.shape).isRequired,
 }

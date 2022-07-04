@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+
 import { Profile } from './Profile/Profile';
 import user from 'user.json';
 import { Statistics } from './Statistics/Statistics';
@@ -37,11 +37,11 @@ export const App = () => {
         likes={userData.stats.likes}
       />
       
-      <Statistics collection={statsDataCollection} /> 
+      <Statistics title="Upload stats" collection={statsDataCollection} /> 
       
       <FriendsList friends={friends} />
 
-      <TransactionHistory transactions={transactionsData}/>
+      <TransactionHistory items={transactionsData}/>
       
         
     </div>
