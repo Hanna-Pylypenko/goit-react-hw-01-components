@@ -1,0 +1,36 @@
+.onlineOfflineMarker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    margin-right: 5px;
+}
+.isOnlineMarker{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color:red;
+    
+}
+.isOfflineMarker{
+    border-radius: 50%;
+     width: 20px;
+    height: 20px;
+    background-color: green;
+   
+}
+.friendItem {
+    display: flex;
+    font-family: "Roboto";
+    padding: 5px;
+    box-shadow: 0.3em 0.3em 1em grey;
+    
+
+}
+.friendItem:hover{
+transform: scale(1.1);
+}
+
+.friendName {
+    font-size: 15px;
+}
