@@ -10,5 +10,10 @@ export const TransactionHistoryItem = ({ item }) => {
     </tr>)
 }
 TransactionHistoryItem.propTypes = {
-    item: PropTypes.objectOf(PropTypes.string).isRequired,
+    item: PropTypes.shape({
+        id: PropTypes.string,
+        type: PropTypes.string,
+        amount: PropTypes.string,
+        currency: PropTypes.string
+    }).isRequired,
 }
