@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './FriendsListItem.module.css';
-export const FriendListItem = ({ avatar, name, isOnline, keyItem }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.friendItem}>
       <div className={css.onlineOfflineMarker}>
