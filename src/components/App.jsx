@@ -1,14 +1,13 @@
-
 import { Profile } from './Profile/Profile';
 import user from '../data/user.json';
 import { Statistics } from './Statistics/Statistics';
-import data from "../data/data.json"
-import friendsList from "../data/friends.json"
+import data from '../data/data.json';
+import friendsList from '../data/friends.json';
 import { FriendsList } from './FriendsList/FriendsList';
-import transactions from "../data/transactions.json"
+import transactions from '../data/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 const userData = user;
-const statsData = data
+const statsData = data;
 const friends = friendsList;
 const transactionsData = transactions;
 
@@ -22,7 +21,7 @@ export const App = () => {
         justifyContent: 'space-around',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       <Profile
@@ -31,16 +30,13 @@ export const App = () => {
         location={userData.location}
         avatar={userData.avatar}
         stats={userData.stats}
-
       />
-      
-      <Statistics title="Upload stats" stats={statsData} /> 
-      
+
+      <Statistics title="Upload stats" stats={statsData} />
+
       <FriendsList friends={friends} />
 
-      <TransactionHistory items={transactionsData}/>
-      
-        
+      <TransactionHistory items={transactionsData} />
     </div>
   );
 };
